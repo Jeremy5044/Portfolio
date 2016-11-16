@@ -2,11 +2,16 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      template: '<h1>Welcome Home</h1>'
+      templateUrl: 'templates/home.tpl.html',
+      controller: 'HomeController'
     })
     .state('about', {
       url: '/about',
       template: '<h1>About Me</h1>'
+    })
+    .state('dogs', {
+      url: '/dogs',
+      templateUrl: 'templates/dogs.tpl.html'
     });
 
   $urlRouterProvider.otherwise('/');
