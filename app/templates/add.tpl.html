@@ -1,0 +1,13 @@
+<h1 class="title">Add a Gif</h1>
+
+<form name="new-gif" ng-submit="addGif(gif)">
+  <p class="control">
+    <input name="name" type="text" placeholder="Name"
+           ng-model="gif.name" />
+  </p>
+  <p class="control">
+    <input name="url" type="text" placeholder="http://funny.gif"
+           ng-model="gif.url" />
+  </p>
+  <button class="button is-primary">Add Gif</button>
+</form>
