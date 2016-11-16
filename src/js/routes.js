@@ -17,6 +17,11 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       url: '/add',
       templateUrl: 'templates/add.tpl.html',
       controller: 'AddController'
+    })
+    .state('single', {
+      url: '/gif/:id',
+      templateUrl: 'templates/single.tpl.html',
+      controller: 'SingleController'
     });
 
   $urlRouterProvider.otherwise('/');
