@@ -1,11 +1,8 @@
-import { SERVER } from "../server";
-
-function SingleController ($scope, $http, $stateParams) {
+function SingleController ($scope, GifService, $stateParams) {
   $scope.gif = {};
 
   function init () {
-    let url = SERVER + $stateParams.id;
-    $http.get(url).then((resp) => {
+    GifService.getGif($stateParams.id).then((resp) => {
       $scope.gif = resp.data;
     });
   };
@@ -13,5 +10,5 @@ function SingleController ($scope, $http, $stateParams) {
   init();
 }
 
-SingleController.$inject = ['$scope', '$http', '$stateParams'];
+SingleController.$inject = ['$scope', 'GifService', '$stateParams'];
 export { SingleController };

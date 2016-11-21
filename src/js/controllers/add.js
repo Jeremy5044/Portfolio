@@ -1,14 +1,12 @@
-import { SERVER } from "../server";
-
-function AddController ($scope, $http, $state) {
+function AddController ($scope, $state, GifService) {
 
   $scope.addGif = (gif) => {
-    $http.post(SERVER, gif).then((resp) => {
+    GifService.addGif(gif).then((resp) => {
       $state.go('home');
     });
   };
 
 };
 
-AddController.$inject = ['$scope', '$http', '$state'];
+AddController.$inject = ['$scope', '$state', 'GifService'];
 export { AddController };

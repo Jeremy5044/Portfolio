@@ -1,11 +1,9 @@
-import { SERVER } from "../server";
-
-function HomeController ($scope, $http) {
+function HomeController ($scope, GifService) {
   $scope.gifs = [];
 
   function init () {
     console.log("Starting home controller");
-    $http.get(SERVER).then((resp) => {
+    GifService.allGifs().then((resp) => {
       $scope.gifs = resp.data;
     });
   }
@@ -13,5 +11,5 @@ function HomeController ($scope, $http) {
   init();
 };
 
-HomeController.$inject = ['$scope', '$http'];
+HomeController.$inject = ['$scope', 'GifService'];
 export { HomeController };
