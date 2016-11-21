@@ -1,11 +1,14 @@
 function LayoutController () {
   console.log("LAYOUT CONTROLLER IS ALIVE");
 
-  this.message = 'Hello from LayoutController!';
+  let vm = this;
 
-  this.clickMe = () => {
+  vm.message = 'Hello from LayoutController!';
+  vm.clickMe = clickMe;
+
+  function clickMe () {
     console.log("I got clicked");
-  };
+  }
 }
 
 LayoutController.$inject = [];

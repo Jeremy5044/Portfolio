@@ -1,6 +1,10 @@
-function AddController ($scope, $state, GifService) {
+function AddController ($state, GifService) {
 
-  $scope.addGif = (gif) => {
+  let vm = this;
+
+  this.addGif = addGif;
+
+  function addGif (gif) {
     GifService.addGif(gif).then((resp) => {
       $state.go('home');
     });
@@ -8,5 +12,5 @@ function AddController ($scope, $state, GifService) {
 
 };
 
-AddController.$inject = ['$scope', '$state', 'GifService'];
+AddController.$inject = ['$state', 'GifService'];
 export { AddController };

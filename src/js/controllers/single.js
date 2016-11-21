@@ -1,14 +1,16 @@
 function SingleController (GifService, $stateParams) {
 
-  this.gif = {};
+  let vm = this;
 
-  this.init = () => {
+  vm.gif = {};
+
+  function init () {
     GifService.getGif($stateParams.id).then((resp) => {
-      this.gif = resp.data;
+      vm.gif = resp.data;
     });
   };
 
-  this.init();
+  init();
 }
 
 SingleController.$inject = ['GifService', '$stateParams'];

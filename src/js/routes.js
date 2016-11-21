@@ -21,7 +21,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     .state('root.add', {
       url: '/add',
       templateUrl: 'templates/add.tpl.html',
-      controller: 'AddController'
+      controller: 'AddController as add'
     })
     .state('root.single', {
       url: '/gif/:id',
