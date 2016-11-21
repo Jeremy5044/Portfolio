@@ -1,14 +1,15 @@
-function SingleController ($scope, GifService, $stateParams) {
-  $scope.gif = {};
+function SingleController (GifService, $stateParams) {
 
-  function init () {
+  this.gif = {};
+
+  this.init = () => {
     GifService.getGif($stateParams.id).then((resp) => {
-      $scope.gif = resp.data;
+      this.gif = resp.data;
     });
   };
 
-  init();
+  this.init();
 }
 
-SingleController.$inject = ['$scope', 'GifService', '$stateParams'];
+SingleController.$inject = ['GifService', '$stateParams'];
 export { SingleController };

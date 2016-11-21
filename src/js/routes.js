@@ -3,12 +3,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     .state('root', {
       abstract: true,
       templateUrl: 'templates/layout.tpl.html',
-      controller: 'LayoutController'
+      controller: 'LayoutController as layout'
     })
     .state('root.home', {
       url: '/',
       templateUrl: 'templates/home.tpl.html',
-      controller: 'HomeController'
+      controller: 'HomeController as home'
     })
     .state('root.about', {
       url: '/about',
@@ -26,7 +26,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     .state('root.single', {
       url: '/gif/:id',
       templateUrl: 'templates/single.tpl.html',
-      controller: 'SingleController'
+      controller: 'SingleController as single'
     });
 
   $urlRouterProvider.otherwise('/');
@@ -34,4 +34,3 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
 
 routerConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 export { routerConfig };
-
