@@ -1,24 +1,29 @@
 function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
-    .state('home', {
+    .state('root', {
+      abstract: true,
+      templateUrl: 'templates/layout.tpl.html',
+      controller: 'LayoutController'
+    })
+    .state('root.home', {
       url: '/',
       templateUrl: 'templates/home.tpl.html',
       controller: 'HomeController'
     })
-    .state('about', {
+    .state('root.about', {
       url: '/about',
       template: '<h1>About Me</h1>'
     })
-    .state('dogs', {
+    .state('root.dogs', {
       url: '/dogs',
       templateUrl: 'templates/dogs.tpl.html'
     })
-    .state('add', {
+    .state('root.add', {
       url: '/add',
       templateUrl: 'templates/add.tpl.html',
       controller: 'AddController'
     })
-    .state('single', {
+    .state('root.single', {
       url: '/gif/:id',
       templateUrl: 'templates/single.tpl.html',
       controller: 'SingleController'
