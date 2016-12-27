@@ -12,20 +12,20 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     })
     .state('root.about', {
       url: '/about',
-      template: '<h1>About Me</h1>'
+      templateUrl: 'templates/about.tpl.html'
     })
-    .state('root.dogs', {
-      url: '/dogs',
-      templateUrl: 'templates/dogs.tpl.html'
+    .state('root.skills', {
+      url: '/skills',
+      templateUrl: 'templates/skills.tpl.html'
     })
     .state('root.add', {
-      url: '/add',
-      templateUrl: 'templates/add.tpl.html',
+      url: '/projects',
+      templateUrl: 'templates/projects.tpl.html',
       controller: 'AddController as add'
     })
     .state('root.single', {
-      url: '/gif/:id',
-      templateUrl: 'templates/single.tpl.html',
+      url: '/contact',
+      templateUrl: 'templates/contact.tpl.html',
       controller: 'SingleController as single'
     });
 
