@@ -9,6 +9,7 @@ function LayoutController () {
   function clickMe () {
     console.log("I got clicked");
   }
+
 }
 
 LayoutController.$inject = [];
