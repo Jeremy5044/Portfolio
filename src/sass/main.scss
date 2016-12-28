@@ -38,7 +38,7 @@ p{
 	padding:3%;
 	text-indent:2%;
 	text-align:justify;
-	color:#F5F5F5;
+	color:#000000;
 }
 img{
 	max-width:100%;
@@ -56,7 +56,7 @@ header{
 	margin:0px auto;
 }
 #logo{
-	margin:20px;
+	
 	float:left;
 	width:200px;
 	height:60px;
@@ -207,6 +207,108 @@ footer{
 .i:hover{
 	background:white;
 }
+.moimg{
+	margin-left: 23%;
+	margin-left: 23%;
+    padding-bottom: 15px;
+    width: 55%;
+}
+// ---layout css-------//
+// ----profects--------//
+.hpub{
+    width: 40%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-left: 2%;
+    border: solid;
+}
+.discription{
+	width: 40%;
+    border: solid;
+    margin-left: 2%;
+    height: 110px;
+    background: paleturquoise;
+    margin-bottom: 3px;
+    padding: 1px;
+}
+.discription:hover{
+	background:white;
+
+}
+.git{
+	width: 18%;
+    margin-left: 40%;
+}
+.html2{
+	height: 50px;
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-left: 195px;
+}
+.html1{
+	border: solid;
+    width: 40%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+    background: coral;
+}
+.html3{
+	width:11%;
+}
+.html4{
+	height: 50px;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+.project{ 
+	background: #6991AC;
+	}
+.projerc-banner-inner{
+	height:665px;
+}
+.mesh{
+    max-width: 205px;
+    width: 31%;
+    margin-left: 1%;
+}
+.projerc-banner-inner2{
+    float: right;
+    width: 46%;
+    border: solid;
+    width: 40%;
+    margin-right: 2%;
+}
+.discription2{
+	width: 96%;
+    border: solid;
+    margin-left: 1%;
+    height: 110px;
+    background: paleturquoise;
+    margin-bottom: 3px;
+    padding: 1px;
+}
+.html11{
+	border: solid;
+    width: 96%;
+    margin-bottom: 0%;
+    background: coral;
+    margin-left: 1%;
+}
+.git1{
+	width: 17%;
+    margin-left: 40%;
+    padding: 3px;
+
+}
+.html22{
+	
+	height: 50px;
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-left: 227px;
+}
+
+
 // --starting media----//
 @media screen and (max-width:768px){
 	h2{
@@ -293,6 +395,61 @@ footer{
     .hey{
     	margin-left: 22%;
     }
+    .html1{
+	width:100%;
+	}
+	.discription{
+		width: 100%;
+	}
+	.git {
+    width: 14%;
+    margin-left: 40%;
+	}
+
+.html2 {
+    height: 50px;
+    padding: 4px;
+    margin-bottom: 0%;
+    margin-left: 35%;	
+}
+.hpub {
+    width: 100%;
+    height: 550px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-left: 2%;
+    border: solid;
+    margin-top: 10px;
+}
+.mesh{
+	width: 100%;
+	max-width:218px;
+  
+}
+.projerc-banner-inner {
+	height: 320px
+}
+.projerc-banner-inner2{
+	width:96%;
+
+}
+.html22{
+	
+	height: 50px;
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-left: 227px;
+}
+.discription2{
+		width: 100%;
+	}
+.html11{
+	border: solid;
+    width: 100%;
+    margin-bottom: 0%;
+    background: coral;
+    margin-left: 1%;
+}
 }
 
 
