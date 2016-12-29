@@ -156,7 +156,10 @@ aside{
 	background:#6991AC;
 }
 #motavation{
-	background-color:#BED9AD;
+	background-color: #BED9AD;
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 80px;
 }
 #skills{
 	background-color:#F1AA90;
@@ -199,7 +202,7 @@ footer{
 }
 
 .i{
-	width: 7%;
+	width: 3%;
     margin: 1%;
     background: #C3D7DF;
     border-radius: 9px;
@@ -213,42 +216,104 @@ footer{
     padding-bottom: 15px;
     width: 55%;
 }
+#me1{
+	max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: -4px;
+    margin-left: 31%;
+}
+#me{
+	position: absolute;
+    left: 31%;
+   opacity: 0.0;
+}
+#me:hover{
+	animation: shake 0.92s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+	opacity: 0.6;
+
+}
+
 // ---layout css-------//
 // ----profects--------//
 .hpub{
-    width: 40%;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-    margin-left: 2%;
-    border: solid;
+    width: 100%;
+  }
+
+.hpub:hover{
+	opacity: 0.3;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.words-view{
+    position: relative;
+    font-size: 57px;
+    width: 25%;
+    left: 14%;
+    bottom: -257px;
+    height: 66px;
+    border: none;
+    opacity: 0.0;
+   
+}
+.words-view:hover{
+    opacity: 1;
 }
 .discription{
-	width: 40%;
+    width: 100%;
     border: solid;
-    margin-left: 2%;
-    height: 110px;
-    background: paleturquoise;
+    margin-left: 1%;
+    height: 52px;
+    background: #d3c9ca;
     margin-bottom: 3px;
     padding: 1px;
+    border: azure;
+    box-shadow: 5px -5px 5px #190601;
+    margin-top: -29px;
+    border: solid #3b0c09;
 }
 .discription:hover{
 	background:white;
 
 }
 .git{
-	width: 18%;
-    margin-left: 40%;
+	margin-left: 47%;
+    margin-bottom: 70px;
+    width: 8%;
+    padding: 6px;
 }
 .html2{
-	height: 50px;
+	height: 55px;
     padding: 4px;
     margin-bottom: 5px;
     margin-left: 195px;
 }
 .html1{
 	border: solid;
-    width: 40%;
-    margin-left: 2%;
+    width: 55%;
+    margin-left: 1%;
     margin-bottom: 0%;
     background: coral;
 }
@@ -264,7 +329,7 @@ footer{
 	background: #6991AC;
 	}
 .projerc-banner-inner{
-	height:665px;
+	height: 649px;
 }
 .mesh{
     max-width: 205px;
@@ -273,39 +338,89 @@ footer{
 }
 .projerc-banner-inner2{
     float: right;
-    width: 46%;
-    border: solid;
-    width: 40%;
-    margin-right: 2%;
+    width: 57%;
+    margin-right: 0%;
 }
 .discription2{
-	width: 96%;
+	width: 98%;
     border: solid;
-    margin-left: 1%;
-    height: 110px;
-    background: paleturquoise;
-    margin-bottom: 3px;
+    height: 50px;
+    background: #294171;
+    margin-bottom: 4px;
     padding: 1px;
+    border: solid white;
+    margin-top: -28px;
 }
 .html11{
 	border: solid;
-    width: 96%;
+    width: 97%;
     margin-bottom: 0%;
     background: coral;
-    margin-left: 1%;
 }
-.git1{
-	width: 17%;
-    margin-left: 40%;
-    padding: 3px;
 
-}
 .html22{
 	
 	height: 50px;
     padding: 4px;
     margin-bottom: 5px;
     margin-left: 227px;
+   
+}
+.hpub-tittle{
+    width: 44%;
+    max-width: 1000px;
+    font-size: 111px;
+    height: 440px;
+    margin: auto;
+    padding-top:30px;
+}
+
+#hpub-script{
+	font-size:10px
+}
+.Profilewrapper2{
+    height: 330px;
+    margin-top: 0px;
+    padding-top: 10px;
+    background: #89547a;
+    margin-top: -3px;
+    width: 28%;
+}
+
+.Mesh-tittle{
+    float: left;
+    width: 100%;
+    max-width: 619px;
+    font-size: 111px;
+    height: 320px;
+    margin-right: 0%;
+    background: #547389;
+}
+.Mesh{
+	font-size:40px;
+	font-size: 110px;
+	margin-top: 143px;
+}
+.mesh{
+    width: 28%;
+    margin-left: 0%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    box-shadow: 5px -3px 5px #190601
+}
+h4{
+	position: relative;
+    top: 123px;
+    left: 290px;
+    font-size: initial;
+    color: black;
+}
+
+
+.Profilewrapper{
+    height: 455px;
+    width: 100%;
+    background: antiquewhite;
 }
 
 
@@ -316,6 +431,9 @@ footer{
 	}
 	h3{
 		font-size:125%;
+	}
+	h4{
+		display:none;
 	}
 	p{
 		font-size: 120%;
@@ -399,28 +517,25 @@ footer{
 	width:100%;
 	}
 	.discription{
-		width: 100%;
+    width: 100%;
+    border: solid;
+    margin-left: 1%;
+    height: 110px;
+    background: #d3c9ca;
+    margin-bottom: 3px;
+    padding: 1px;
+    border: azure;
+    box-shadow: 3px 1px 17px #190601;
+    margin-top: -26px;
+    border: solid #3b0c09;
 	}
 	.git {
     width: 14%;
     margin-left: 40%;
 	}
 
-.html2 {
-    height: 50px;
-    padding: 4px;
-    margin-bottom: 0%;
-    margin-left: 35%;	
-}
-.hpub {
-    width: 100%;
-    height: 550px;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-    margin-left: 2%;
-    border: solid;
-    margin-top: 10px;
-}
+
+
 .mesh{
 	width: 100%;
 	max-width:218px;
@@ -428,27 +543,39 @@ footer{
 }
 .projerc-banner-inner {
 	height: 320px
-}
-.projerc-banner-inner2{
-	width:96%;
+
 
 }
-.html22{
-	
-	height: 50px;
-    padding: 4px;
-    margin-bottom: 5px;
-    margin-left: 227px;
+
+.hpub-tittle{
+	width:100%;
+	margin-right:1px;
+	height: 215px;
+	margin-left:0px;
+	padding: 25px;
+
 }
-.discription2{
-		width: 100%;
-	}
-.html11{
-	border: solid;
-    width: 100%;
-    margin-bottom: 0%;
-    background: coral;
-    margin-left: 1%;
+
+.Mesh-tittle{
+	width: 96%;
+    margin-left: 14px;
+    height: 180px;
+    margin-bottom: 15px;
+}
+.Mesh{
+	margin-top: 50px;
+	height: 185px;
+	margin-bottom: 10px;
+}
+
+.Profilewrapper{
+    background: #c3d7df;
+    height: 555px;
+}
+.hpub{
+	width: 100%;
+    margin-top: 50px;
+    padding-top: 10px;
 }
 }
 
