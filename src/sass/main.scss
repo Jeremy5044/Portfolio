@@ -11,6 +11,10 @@
 	max-width: 1450px;
 
 }
+li{
+  text-align: center;
+  text-decoration: underline;
+}
 #JavaScript{
 	width: 25%;
     float: left;
@@ -430,20 +434,23 @@ h4{
     width: 100%;
     background: antiquewhite;
 }
+#S1{
+      font-size: 160%;
+}
 // --------------Resume----------------------------------//
 .timeline-container{
     
     background: steelblue;
 }
-.Resume{
-   max-width: 630px;
+#Resume{
+    max-width: 100%;
     height: auto;
-    width: 100%;
+    width: auto;
     margin-bottom: -4px;
-    margin: auto;
-    margin-left: 27%;
-    border: solid;
+    margin-left: 30%;
+    margin-top: 1%;
 }
+
 // --starting media----//
 @media screen and (max-width:768px){
 	h2{
@@ -541,7 +548,7 @@ h4{
     width: 100%;
     border: solid;
     margin-left: 1%;
-    height: 110px;
+    height: 35px;
     background: #d3c9ca;
     margin-bottom: 3px;
     padding: 1px;
@@ -551,8 +558,10 @@ h4{
     border: solid #3b0c09;
 	}
 	.git {
-    width: 14%;
+    width: 15%;
     margin-left: 45%;
+    height: 33px;
+    margin-bottom: 90px;
 	}
 
 
@@ -563,7 +572,7 @@ h4{
   
 }
 .projerc-banner-inner {
-	height: 320px
+	height: 253px
 
 
 }
@@ -591,12 +600,11 @@ h4{
 
 .Profilewrapper{
     background: #c3d7df;
-    height: 635px;
+    height: 370px;
 }
 .hpub{
 	width: 100%;
-    margin-top: 106px;
-    padding-top: 10px;
+  padding-top: 10px;
 }
 #me1{
     max-width: 69%;
@@ -622,8 +630,24 @@ h4{
       background: #6991AC;
       margin-top: 84px;
 }
+.timeline-container{
+    width: 100%;
+    height: 670px;
+    }
 
+   
+    #Resume{
+    max-width: 100%;
+    height: 83%;
+    width: auto;
+    margin-bottom: -4px;
+    margin-left: 0%;
+    margin-top: 25%;
+  }
+    
 }
+
+
 
 
 
