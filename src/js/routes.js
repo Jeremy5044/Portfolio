@@ -6,7 +6,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'LayoutController as layout'
     })
     .state('root.home', {
-      url: '/about',
+      url: '/',
       templateUrl: 'templates/home.tpl.html',
       controller: 'HomeController as home'
     })
