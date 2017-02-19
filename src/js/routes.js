@@ -10,6 +10,18 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/home.tpl.html',
       controller: 'HomeController as home'
     })
+    .state('root.closeUp', {
+      url: '/closeUp',
+      templateUrl: 'templates/closeUp.tpl.html',
+    })
+    .state('root.hpub', {
+      url: '/hpub',
+      templateUrl: 'templates/hpub.tpl.html',
+    })
+    .state('root.mesh', {
+      url: '/mesh',
+      templateUrl: 'templates/mesh.tpl.html',
+    })
     .state('root.about', {
       url: '/about',
       templateUrl: 'templates/about.tpl.html'
