@@ -491,7 +491,11 @@ margin: 0% 25% 0% 25%;
 .close-container4{
   height: 1000px;
 margin: 0% 25% 0% 25%;
+animation: colorchange 50s;
+ -webkit-animation: colorchange 50s;
 }
+
+
 .cBox{
   background-color: #032135;
 width: 100%;
